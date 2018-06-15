@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="position.css">
+</head>
+<body>
+	<h1>CSS Position Property has 4 possible values</h1>
+	<ol>
+		<li><a href="#static">Static</a></li>
+		<li><a href="#relative">Relative</a></li>
+		<li><a href="#absolute">Absolute</a></li>
+		<li><a href="#fixed">Fixed</a></li>
+	</ol>
+
+	<!-- If an anchor tag has a name, it can be linked to interally -->
+	<a name="static"></a>
+	<div class="static">
+		<h2>Static</h2>
+		<p>Static is the default position value</p>
+		<p>Top, left, right, bottom will NOT work with static</p>
+		<p>A static element will show up exactly where it is in the HTML, left to right, top to bottom...it CANNOT be moved</p>
+		<div class="static-box">
+			Static Box
+		</div>
+	</div>
+
+	<a name="relative"></a>
+	<div class="relative">
+		<h2>Relative Position</h2>
+		<p>A relative postion is the same as static except it will honor top, left, bottom, right</p>
+		<p>if you move it, it will sit on top of other stuff on the page, and the page will think it;s still where it used to be</p>
+		<div class="relative-box">
+			
+		</div>
+	</div>
+
+	<a name="absolute"></a>
+	<div class="absolute">
+		<h2>Absolute Position</h2>
+		<p>Absolute elements work off the grid system. Just like fixed, they are ignored by EVERYONE.</p>
+		<p>They honor z-index</p> 
+		<p>Like fixed, they do not leave gaps in the page</p>
+		<p>The top/left/right/bottom will be relative to the FIRST parent that has a position set</p>
+		<div class="absolute-box">
+			
+		</div>
+	</div>
+
+	<a name="fixed"></a>
+	<div class="fixed">
+		<h2>Fixed Position</h2>
+		<p>A fixed position element will remain relative to the viewpoint (the screen) even if the user scrolls</p>
+		<p>Top, bottom, left, right will work just fine</p> 
+		<p>Unlike relative, it will not reserve its old space. anything with static or relative will not know it's there.</p>
+		<div class="fixed-box">
+			
+		</div>
+	</div>
+
+</body>
+</html>

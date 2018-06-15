@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jordans</title>
+
+	<style type="text/css">
+		#collection-wrapper{
+			text-align: left;
+		}
+		#top-section{
+			text-align: center;
+		}
+
+		#middle-section{
+			text-align: right;
+		}
+
+		#bottom-section{
+			text-align: left;
+		}
+
+		.thumbnail{
+			width: 40%;
+
+			margin: 0px 10px 20px 10px;
+		}
+
+
+		.box1a{
+			border : solid black 5px;
+			display : flex;
+			flex-direction: row-reverse;
+
+		}
+
+		.box2a{
+			border : solid red 5px;
+
+		}
+		
+		.box2b{
+			border : solid white 5px;
+			display : flex;
+			flex-direction: column;
+		}
+		
+		
+
+	</style>
+</head>
+
+<body>
+	<div id ="collection-wrapper">
+		<div id="top-section">
+			<h1>Jordans</h1>
+			<p>This is a guide for people to know the differences between each Jordan shoe</p>
+		</div>
+
+		<div class = "box1a">
+
+			<div id ="middle-section" class = "box2a">
+			
+				<img  src="./jordan_shoes/jordan4.jpg" name = "mainPic" height=480 width="800" />
+				
+			</div>
+
+			<div id="bottom-section" class = "box2b">
+				<img class="thumbnail " src="./jordan_shoes/jordan1.jpg" onClick="mainPic.src = this.src">
+				<img class="thumbnail " src="./jordan_shoes/jordan2.jpg" onClick="mainPic.src = this.src">
+				<img class="thumbnail " src="./jordan_shoes/jordan3.jpg" onClick="mainPic.src = this.src">
+				<img class="thumbnail " src="./jordan_shoes/jordan4.jpg" onClick="mainPic.src = this.src">
+				<img class="thumbnail " src="./jordan_shoes/jordan5.jpg" onClick="mainPic.src = this.src">
+				
+			</div>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>

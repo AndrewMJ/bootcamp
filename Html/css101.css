@@ -1,0 +1,55 @@
+body{
+	background-color: lightblue;
+}
+
+#container{
+	background-color: yellow;
+	width: 80%;
+	color: green;
+	margin: auto;
+	text-align: center;
+}
+
+/*a space means parent > child*/
+#container .the-block{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	
+	
+}
+
+
+/*to target more than one element, you use a comma.*/
+.the-block,.the-block2{
+	font-size: 50px;
+}
+
+.the-block.one{
+	border: 5px solid blue
+}
+
+.parent{
+	width: 200px;
+	height: 200px;
+	background: red;
+}
+
+/*> is like a space but it will only go one layer down*/
+.parent > div{
+	width: 100px;
+	height: 100px;
+	background-color: salmon;
+}
+
+.parent > div > div{
+	width: 50px;
+	background-color: skyblue;
+}
+
+.inline-tag{
+	color: white;
+	font-size: 70px;
+	width: 10px;
+	height: 10px;
+}
